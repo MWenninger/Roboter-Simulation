@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Roboterhund kompilieren",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "roboter.c",
+                "-o",
+                "roboterhund",
+                "-I/usr/local/include",
+                "-L/usr/local/lib",
+                "-lraylib"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
